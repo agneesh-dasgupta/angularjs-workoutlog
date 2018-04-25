@@ -39,6 +39,6 @@
  
 	$stmt->close();
 	echo "User successfully created.";
-	echo '<a href = "loginnews.html"> Click here to go back to the login page. </a>'; 
+	echo '<a href = "index.html"> Click here to go back to the login page. </a>'; 
 	exit;
 ?>

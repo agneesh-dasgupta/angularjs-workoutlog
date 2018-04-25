@@ -4,11 +4,6 @@
     // Use a prepared statement
     $pwd_guess = $_POST['password'];
     $user = $_POST['username'];
-    if( !preg_match('/^[\w_\-]+$/', $username) ){
-        echo htmlentities("Invalid new username");
-        exit;
-	}
-
 	$stmt = $mysqli->prepare("SELECT COUNT(*), username, password FROM users WHERE username=?");
 
 	// Bind the parameter
