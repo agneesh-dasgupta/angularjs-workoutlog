@@ -3,7 +3,7 @@
 * New framework used (AngularJS) - 20 points
 ### User management ###
 * Users can log in with username and password- 3 points 
-* All data is stored in MongoDB database- 3 points 
+* All data is stored in MySQL database- 3 points 
 * Users can log out- 2 points 
 * New users can register- 2 points
 
