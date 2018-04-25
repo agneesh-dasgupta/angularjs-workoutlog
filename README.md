@@ -1,4 +1,4 @@
-### Rubric-Snake ###
+### Rubric-Workout log ###
 
 * New framework used (AngularJS) - 20 points
 ### User management ###
@@ -8,13 +8,13 @@
 * New users can register- 2 points
 
 ### Main game ### 
-* Users can start a new game- 5 points 
-* Snake moves when arrow keys are pressed- 4 points
-* Snake length increases when fruit is eaten- 4 points
-* Game ends when snake hits walls/itself- 4 points
-* Game speed changes with higher levels- 4 points
-* High scores are logged and displayed- 4 points
-* Can change color of snake- 4 points
+* Users can add a workout- 5 points 
+* All of user's workouts are displayed- 4 points
+* All other user's workouts are displayed- 4 points
+* Users can see cumulative data from their own workouts- 4 points
+* Users can challenge other users to workouts - 4 points
+* Can change background color- 4 points
+* Users can private message other users- 4 points
 
 ## Best practices ##
 * Code is well-formatted and easy to read- 3 points
