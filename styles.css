@@ -1,0 +1,41 @@
+#loginBox{
+	text-align: center;
+	display: inline-block;
+	background: green;
+	padding: 5px;
+	margin: 10px;
+}
+
+#registerBox{
+	text-align: center;
+	display: inline-block;
+	background: green;
+	padding: 5px;
+	margin: 10px;
+	z-index: 100;
+}
+
+#boxes{
+	text-align: center;
+	margin-top: 15%;
+	z-index: 100;
+}
+
+h1{
+	text-align: center;
+	color: green;
+	z-index: 10;
+	font-family: 'VT323', monospace;
+	font-size: 100px;
+	margin: 0px;
+}
+h3{
+	margin: none;
+	font-family: 'VT323', monospace;
+	font-size: 24px;
+}
+
+body{
+	background-color: black;
+
+}

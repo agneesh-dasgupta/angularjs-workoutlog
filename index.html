@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Landing/Login Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+<body>
+	<h1>AD-DA Snake </h1>
+	<div id="background">
+		
+	</div>
+	<div id="boxes">
+		<div id="loginBox">
+			<h3>Returning User:</h3>
+			<form name = "input" action = "userValidation.php" method = "POST">
+				<input type="text" name="username" placeholder="Username">
+				<input type="text" name="password" placeholder="Password">
+				<input type="submit" value="Login"/>
+			</form>
+		</div>
+		<div id="registerBox">
+			<h3>New User:</h3>
+			<form name = "input" action = "userRegistration.php" method = "POST">
+				<input type="text" name="username" placeholder="New Username">
+				<input type="text" name="password" placeholder="New Password">
+				<input type="submit" value="Register"/>
+			</form>
+		</div>
+	</div>
+
+	
+
+</body>
+</html>
