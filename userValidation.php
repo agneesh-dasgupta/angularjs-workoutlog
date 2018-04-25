@@ -1,4 +1,5 @@
 <?php
+	//Validates an existing user
 	require 'database.php';
 	session_start();
     // Use a prepared statement

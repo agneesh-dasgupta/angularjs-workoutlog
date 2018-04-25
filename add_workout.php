@@ -1,5 +1,5 @@
 <?php
-		
+		//Adds a new workout to the database
 require 'database.php';
 ini_set("session.cookie_httponly", 1);
 session_start();

@@ -1,4 +1,6 @@
+
 <?php
+//Calculates average workout and returns it 
 require 'database.php';
 ini_set("session.cookie_httponly", 1);
 session_start();
@@ -12,16 +14,13 @@ if(!$stmt){
 $stmt->bind_param('s', $username);
 $stmt->execute();
 
-$result = $stmt->get_result();
+$stmt->bind_result($avg);
  $eventArray = array();
   $index = 0;
-    while($row=$result->fetch_assoc()){
-        $eventArray[] = array(
-            "avg" => $row['avg']
-        );
-    }
+    while($stmt->fetch()){
+	echo $avg;
+}
      $stmt->close();
-    echo json_encode($eventArray);
     exit;
    
 ?>

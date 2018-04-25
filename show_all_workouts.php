@@ -1,11 +1,11 @@
 <?php
-//Returns all workouts for a user using a JSON array
+//Returns all workouts, except for the logged in user, using a JSON array
 require 'database.php';
 ini_set("session.cookie_httponly", 1);
 session_start();
 header("Content-Type: application/json");
 $username = $_SESSION['user_id'];
-$stmt = $mysqli->prepare("select name, duration from workouts where user <>?");
+$stmt = $mysqli->prepare("select user, name, duration from workouts where user <>?");
     if(!$stmt){
         printf("Query Prep Failed: %s\n", $mysqli->error);
         exit;
@@ -17,7 +17,8 @@ $stmt = $mysqli->prepare("select name, duration from workouts where user <>?");
     while($row=$result->fetch_assoc()){
         $eventArray[] = array(
             "name" => $row['name'],
-            "duration" => $row['duration']
+            "duration" => $row['duration'],
+            "user" => $row['user']
         );
     }
     echo json_encode($eventArray);

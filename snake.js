@@ -1,3 +1,4 @@
+//File containing the AngularJS functions required to use the workout log
 angular.module('workout', [])
 .controller('workoutControl', function($scope, $http){
 	$scope.newWorkout = function (){

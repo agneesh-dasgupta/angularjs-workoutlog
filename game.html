@@ -1,3 +1,4 @@
+<!--homepage of the application-->
 <!DOCTYPE html>
     <html data-ng-app = "workout" lang = "EN">
         <head>
@@ -8,21 +9,30 @@
             <script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" ></script>
       <script src = "snake.js"></script>
         </head>
-        <input type = "button" value = "Log out">
-        <body data-ng-controller = "workoutControl">
+       
+        <body data-ng-controller = "workoutControl" data-ng-style = "myStyle">
+             <a href = "logout.php"> Log out </a>
+             <div id = "newworkout">
             Please enter a new workout here, with a title and duration.
             <form>
                 <input type = "text" data-ng-model = "newname">
                 <input type = "number" data-ng-model = "newhours" min = "1">
                 <input type = "button" value = "Submit" data-ng-click = "newWorkout()">
         </form>
-        <div>
-            Your average workout duration is: {{avg}}
+            </div>
+        <div id = "average">
+            Your average workout duration is: {{avg}} hours.
         </div>
+        <div id = "buttons">
         <input type = "button" value = "Show workout" data-ng-click = "showWorkout()">
         <input type = "button" value = "Show average" data-ng-click = "getAverage()">
         <input type = "button" value = "Show other users' workouts" data-ng-click = "showAllWorkout()">
+        </div>
         <table>
+            <tr>
+                <th> Name of workout </th>
+                <th> Duration of workout </th>
+            </tr>
             <tr data-ng-repeat = "x in userworkouts">
                 <td> {{x.name}}</td>
                 <td> {{x.duration}} </td>
@@ -30,11 +40,25 @@
         </table>
         <div id = "all">
             <table>
+                <tr>
+                <th> Name of workout </th>
+                <th> Duration of workout </th>
+                <th> Name of user </th>
+            </tr>
             <tr data-ng-repeat = "x in allworkouts">
                 <td> {{x.name}}</td>
                 <td> {{x.duration}} </td>
+                <td> {{x.user}} </td>
             </tr>
         </table>
+        </div>
+        <div id = "change">
+            Change background color! 
+              <input type="button" value="Lime" data-ng-click="myStyle={background:'lime'}">
+            <input type="button" value="Magenta" data-ng-click="myStyle={background:'magenta'}">
+             <input type="button" value="White" data-ng-click="myStyle={background:'white'}"> 
+             <input type="button" value="Yellow" data-ng-click="myStyle={background:'yellow'}">
+              <input type="button" value="Teal" data-ng-click="myStyle={background:'teal'}">
         </div>
         </body>
       

@@ -15,6 +15,11 @@
 	z-index: 100;
 }
 
+#all{
+	background-color: red;
+	font-family: verdana;
+}
+
 #boxes{
 	text-align: center;
 	margin-top: 15%;
