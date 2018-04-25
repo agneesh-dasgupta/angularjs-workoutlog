@@ -7,7 +7,7 @@
 * Users can log out- 2 points 
 * New users can register- 2 points
 
-### Main game ### 
+### Main page ### 
 * Users can add a workout- 5 points 
 * All of user's workouts are displayed- 4 points
 * All other user's workouts are displayed- 4 points
