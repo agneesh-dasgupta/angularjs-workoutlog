@@ -16,8 +16,8 @@ $stmt = $mysqli->prepare("select name, duration from workouts where user=?");
     $eventArray = array();
     while($row=$result->fetch_assoc()){
         $eventArray[] = array(
-            "name" => $row['name'],
-            "duration" => $row['duration']
+            "name" => htmlentities($row['name']),
+            "duration" => htmlentities($row['duration'])
         );
     }
     echo json_encode($eventArray);

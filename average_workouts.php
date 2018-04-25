@@ -18,7 +18,7 @@ $stmt->bind_result($avg);
  $eventArray = array();
   $index = 0;
     while($stmt->fetch()){
-	echo $avg;
+	echo htmlentities($avg);
 }
      $stmt->close();
     exit;
