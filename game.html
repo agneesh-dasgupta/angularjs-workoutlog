@@ -6,12 +6,13 @@
             <link rel="stylesheet" type="text/css" href="styles.css">
             <title>Workout log </title>
             <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
             <script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" ></script>
       <script src = "snake.js"></script>
         </head>
        
         <body data-ng-controller = "workoutControl" data-ng-style = "myStyle">
-             <a href = "logout.php"> Log out </a>
+             <a href = "logout.php" id="logoutButton"> Log out </a>
              <div id = "newworkout">
             Please enter a new workout here, with a title and duration.
             <form>
@@ -20,14 +21,15 @@
                 <input type = "button" value = "Submit" data-ng-click = "newWorkout()">
         </form>
             </div>
-        <div id = "average">
-            Your average workout duration is: {{avg}} hours.
-        </div>
-        <div id = "buttons">
+            <div id = "buttons">
         <input type = "button" value = "Show workout" data-ng-click = "showWorkout()">
         <input type = "button" value = "Show average" data-ng-click = "getAverage()">
         <input type = "button" value = "Show other users' workouts" data-ng-click = "showAllWorkout()">
         </div>
+        <div id = "average">
+            Your average workout duration is: {{avg}} hours.
+        </div>
+        
         <table>
             <tr>
                 <th> Name of workout </th>
