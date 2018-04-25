@@ -36,6 +36,20 @@ h3{
 }
 
 body{
-	background-color: black;
+	background-color: teal;
 
+}
+
+
+
+.row {
+	height: 26px;
+}
+
+.column {
+	border: 1px solid red;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background-color: white;
 }

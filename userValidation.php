@@ -21,7 +21,7 @@
 	if($cnt == 1 && password_verify($pwd_guess, $pwd_hash)){
 		// Login succeeded!
 		$_SESSION['user_id'] = $user_id;
-		header("Location:main_page.php");	
+		header("Location: game.html");	
 	} 
 	else{
 		// Login failed; redirect back to the login screen
