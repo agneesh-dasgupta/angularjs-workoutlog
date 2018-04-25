@@ -1,4 +1,4 @@
-### Rubric ###
+### Rubric-Snake ###
 
 * New framework used (AngularJS) - 20 points
 ### User management ###
@@ -16,7 +16,7 @@
 * High scores are logged and displayed- 4 points
 * Can change color of snake- 4 points
 
-## Best practices ## (20 points)
+## Best practices ##
 * Code is well-formatted and easy to read- 3 points
 * Passwords are salted and hashed- 3 points
 * Safe from XSS attacks- 3 points
